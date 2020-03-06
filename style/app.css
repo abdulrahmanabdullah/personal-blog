@@ -55,16 +55,19 @@ footer {
   padding: 40px;
   position: relative;
 }
-footer h6 {
+footer .footer-content {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer h2 {
   color: #ffffff;
-  text-align: center;
+  line-height: 1.5;
 }
 footer a {
-  text-align: center;
   color: #bbdefb;
-  position: absolute;
-  left: 0;
-  right: 0;
 }
 
 a {
@@ -129,5 +132,8 @@ a {
     margin: 20px 0 0 0;
     height: auto;
     width: 100%;
+  }
+  footer h2 {
+    font-size: 0.9rem;
   }
 }

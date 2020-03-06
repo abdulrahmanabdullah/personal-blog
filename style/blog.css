@@ -1,3 +1,5 @@
+/* global app style */
+@import 'app.css';
 .post-container {
   width: 90%;
   height: auto;
@@ -56,16 +58,14 @@
 .author-social .social-icons {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: flex-start;
-  grid-gap: 10px;
+  justify-content: stretch;
 }
 
 .fa {
-  width: 20%;
+  width: 6%;
   height: auto;
   border-radius: 50%;
-  font-size: 1.6rem;
+  margin-left: 5px;
 }
 .fa-facebook {
   background: #3b5998;
@@ -84,16 +84,8 @@
 .post-content {
   padding: 30px;
 }
-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 90%;
-  margin: 0 auto;
-}
 /* breakpoint */
-@media (max-width: 660px) {
+@media (max-width: 790px) {
   .author-content {
     width: 80%;
   }
@@ -102,7 +94,7 @@ footer {
     width: 35%;
   }
   .fa {
-    width: 30%;
+    width: 20%;
   }
   .post-content {
     padding: 20px;
