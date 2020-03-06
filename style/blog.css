@@ -1,5 +1,6 @@
 /* global app style */
 @import 'app.css';
+@import 'footer.css';
 .post-container {
   width: 90%;
   height: auto;

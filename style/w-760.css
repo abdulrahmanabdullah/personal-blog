@@ -1,0 +1,22 @@
+.card-containers {
+  display: grid;
+  height: auto;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 10px;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  border: 1px solid #cccccc;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-content {
+  padding: 10px;
+}
+
+.card-content .card-paragraph {
+  padding: 5px;
+}

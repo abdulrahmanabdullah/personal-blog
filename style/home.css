@@ -1,5 +1,9 @@
 /* global app style */
 @import 'app.css';
+@import 'footer.css';
+/* Tablet query */
+@import url('w-760.css') only screen and (max-width: 760px);
+
 .card-containers {
   display: grid;
   height: auto;
@@ -26,7 +30,13 @@
   flex-direction: column;
   padding: 10px;
 }
-
+.card-content button {
+  background: inherit;
+  border: none;
+}
+.card-content button:hover {
+  cursor: pointer;
+}
 .card-content h3 {
   letter-spacing: 0.1rem;
   font-size: 1.3rem;
@@ -51,28 +61,6 @@
   border-radius: 3px;
 }
 
-/* Breakpoint  */
-@media (max-width: 620px) {
-  .card-containers {
-    display: grid;
-    height: auto;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto 1fr auto;
-    grid-gap: 10px;
-  }
-
-  .card {
-    width: 100%;
-    height: auto;
-    border: 1px solid #cccccc;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .card-content {
-    padding: 10px;
-  }
-}
-
 @media (max-width: 460px) {
   .card-containers {
     grid-template-columns: auto;
@@ -84,5 +72,8 @@
     width: 100%;
     height: auto;
     padding: 0px;
+  }
+  .card-content .card-paragraph {
+    padding: 2px;
   }
 }

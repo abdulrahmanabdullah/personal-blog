@@ -46,37 +46,10 @@ html {
   font-size: 2.2rem;
 }
 
-footer {
-  height: auto;
-  background: #1d78c2;
-  margin: 30px 0 0 0;
-  padding: 20px;
-  width: 100%;
-  padding: 40px;
-  position: relative;
-}
-footer .footer-content {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-footer h2 {
-  color: #ffffff;
-  line-height: 1.5;
-}
-footer a {
-  color: #bbdefb;
-}
-
 a {
   text-decoration: none;
 }
-
-/* Media query */
-/* Tablet device */
-@media (max-width: 600px) {
+@media (max-width: 760px) {
   .container {
     width: 90%;
     height: 100%;
@@ -108,7 +81,6 @@ a {
     width: 100%;
   }
 }
-/* mobiles  */
 @media (max-width: 460px) {
   .header {
     width: 100%;
